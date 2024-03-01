@@ -1,0 +1,49 @@
+div#clock{
+    width: 280px;
+    height: 280px;
+    margin:100px auto;
+    position:relative;
+    box-sizing: border-box;
+    background-color: black;
+}
+
+div#clock>div.img{
+    width: inherit;
+    height: inherit;
+    position: absolute;
+    left:0;
+    top:0
+}
+div#clock>div.img > img{
+    width: inherit;
+    height: inherit;
+    object-fit: cover;
+}
+
+div#hour,div#minute,div#second{
+    position: absolute;
+    transform-origin:bottom;
+    left:138px;
+    /*transform: rotateZ();*/
+
+}
+div#hour{
+    width:4px;
+    height: 50px;
+    top:90px;
+    background-color: black;
+    z-index: 90;
+}
+div#minute{
+    width:4px;
+    height: 80px;
+    top:60px;
+    background-color: black;
+    z-index: 100;
+}
+div#second{
+    width:3px;
+    height: 120px;
+    top:17px;
+    background-color: red;
+}
